@@ -10,6 +10,6 @@ fp.filter = (list, arrArgs) => Array.prototype.filter.apply(list, arrArgs);
 
 fp.reduce = (list, arrArgs) => Array.prototype.reduce.apply(list, arrArgs);
 
-fp.concat = (list) => Array.prototype.concat.bind(list, 37);
+fp.concat = (list, arg) => Array.prototype.concat.bind(list, arg);
 
 fp.splice = (list, start, end, args) => Array.prototype.splice.call(list, start, end, args);

@@ -41,7 +41,7 @@ describe ('testing fp file', () => {
 
   describe ('testing fp.concat', () => {
     it ('expect to combine the arrays arr and arr2 in that order', () => {
-      expect(fp.concat(arr, arr2)).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+      expect(fp.concat(arr, arr2)()).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
     });
     // it ('expect to sum numbers of array less than 2', () => {
     //   expect(fp.reduce(arr, [multiplyEm])).toEqual(24);
