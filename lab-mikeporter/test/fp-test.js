@@ -45,7 +45,7 @@ describe ('testing fp file', () => {
       expect(fp.concat(arr, arr2)()).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
     });
     it ('combine a string and an array of numbers', () => {
-      expect(fp.concat(potato, arr)()).toEqual([potato, 1,2,3,4]);
+      expect(fp.concat(potato, arr)()).toEqual([potato, 1, 2, 3, 4]);
     });
   });
 
@@ -55,7 +55,7 @@ describe ('testing fp file', () => {
       expect(arr).toEqual([potato, 4]);
     });
     it ('expect to remove all elements greater than index 1', () => {
-      let len = arr2.length-2;
+      let len = arr2.length - 2;
       expect(fp.splice(arr2, 2, len, potato)).toEqual([7, 8]);
       expect(arr2).toEqual([5, 6, potato]);
     });

@@ -1,6 +1,5 @@
 'use strict';
 
-
 const index = require('../index.js');
 const expect = require('expect');
 
